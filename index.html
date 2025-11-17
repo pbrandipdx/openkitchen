@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Kitchen | Intuitive Healthy Home Cooking</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    
+    <script>
+        // Custom Tailwind Configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // A warm, food-inspired palette
+                        'cream': '#FBF8F1',
+                        'olive': {
+                            'light': '#A7BCA5',
+                            'DEFAULT': '#587445', // A calm, natural green
+                            'dark': '#4A623A',
+                        },
+                        'rust': {
+                            'light': '#D68C70',
+                            'DEFAULT': '#B95C3B', // A warm, earthy accent for buttons
+                            'dark': '#A04D2D',
+                        },
+                        'dark-text': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream text-dark-text antialiased">
+
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="text-3xl font-bold text-olive-dark">
+                    Open Kitchen
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-olive-dark transition-colors">The Story</a>
+                    <a href="#" class="text-gray-600 hover:text-olive-dark transition-colors">Courses</a>
+                    <a href="#" class="text-gray-600 hover:text-olive-dark transition-colors">Biography</a>
+                    <a href="mailto:french@openkitchencooking.com?subject=Let's%20Connect!" 
+                       class="bg-rust text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md hover:bg-rust-dark transition-all">
+                       Let's Connect!
+                    </a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-dark-text p-2 rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-olive-light/30">The Story</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-olive-light/30">Courses</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-olive-light/30">Biography</a>
+                <a href="mailto:french@openkitchencooking.com?subject=Let's%20Connect!" class="block w-full text-center mt-3 bg-rust text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md hover:bg-rust-dark transition-all">
+                   Let's Connect!
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h1 class="text-4xl md:text-6xl font-extrabold text-olive-dark leading-tight tracking-tighter">
+                            Welcome to Open Kitchen
+                        </h1>
+                        <p class="mt-6 text-xl text-gray-600">
+                            Courses in <span class="font-semibold text-olive">Intuitive, Healthy Home Cooking</span> that nourish your body, mind, and spirit.
+                        </p>
+                        <a href="mailto:french@openkitchencooking.com?subject=I'd%20like%20to%20learn%20more" 
+                           class="inline-block mt-10 bg-rust text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:bg-rust-dark transition-all transform hover:scale-105">
+                           Schedule a Free 30-Min Conversation
+                        </a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="A vibrant and colorful bowl of healthy food"
+                             class="rounded-2xl shadow-xl w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://static.wixstatic.com/media/19e062_bd8f70009635411c9ae5c87a0e46f75f~mv2.jpg/v1/crop/x_0,y_38,w_1940,h_2925/fill/w_365,h_614,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_7050_edited.jpg" 
+                         alt="Jason French, founder of Open Kitchen, holding a tray of food"
+                         class="rounded-2xl shadow-xl w-full h-auto object-cover max-w-xs mx-auto">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-olive-dark tracking-tight">
+                        Hi, I’m Jason French
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                        "Open Kitchen represents the culmination of my life’s work - a synthesis of food culture, cooking, service, education, health, and wellness. My goal is simple: to help you become a more confident home cook, crafting delicious, seasonal, whole food meals."
+                    </p>
+                    <a href="#" 
+                       class="inline-block mt-8 text-rust-dark font-semibold text-lg hover:text-rust-darker transition-colors">
+                       Read My Full Story &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-olive-dark tracking-tight">
+                        The Open Kitchen Framework
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        This framework helps us see the kitchen as part of an interconnected whole. We build your repertoire based on Three Pillars, meeting you where you are in your food journey.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-16">
+                    
+                    <div class="text-center">
+                        <img class="rounded-2xl shadow-lg w-full h-auto object-cover" 
+                             src="https://static.wixstatic.com/media/19e062_ac1a88cfaa594a23b03b05c49b33efd0~mv2.jpg/v1/fill/w_310,h_390,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1329_edited.jpg" 
+                             alt="Hands preparing fresh pasta dough for the Learn pillar">
+                        <h3 class="mt-6 text-2xl font-bold text-olive-dark">Learn</h3>
+                        <p class="mt-3 text-gray-600 leading-relaxed">
+                            Explore, simplify, and understand the intersection of your Human System and Food System.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <img class="rounded-2xl shadow-lg w-full h-auto object-cover" 
+                             src="https://static.wixstatic.com/media/19e062_a03512d59fa84d39bf278fff98d25e4f~mv2.jpg/v1/fill/w_335,h_390,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1034794363053599046-6VJ--01.jpg" 
+                             alt="A well-organized pantry for the Organize pillar">
+                        <h3 class="mt-6 text-2xl font-bold text-olive-dark">Organize</h3>
+                        <p class="mt-3 text-gray-600 leading-relaxed">
+                            Save time, money, and headaches as we bring form, function, and flow to your kitchen and pantry.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <img class="rounded-2xl shadow-lg w-full h-auto object-cover" 
+                             src="https://static.wixstatic.com/media/19e062_54d2f14765dc4b3eb1a9cdfd257503c1~mv2.jpg/v1/fill/w_335,h_390,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_2974_JPG.jpg" 
+                             alt="Freshly sliced prosciutto for the Intuit pillar">
+                        <h3 class="mt-6 text-2xl font-bold text-olive-dark">Intuit</h3>
+                        <p class="mt-3 text-gray-600 leading-relaxed">
+                            Hone your intuitive skills while learning essential cooking techniques to transform raw, whole food into delicious meals.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-olive-dark tracking-tight">
+                        Courses & Offerings
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        All courses are offered both online and in person, designed to reintroduce a foundational, connected approach to how you select, prepare, and enjoy food.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                    
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col transition-all hover:shadow-2xl hover:-translate-y-1">
+                        <img class="w-full h-56 object-cover" 
+                             src="https://images.pexels.com/photos/1234535/pexels-photo-1234535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="A beautifully plated dish from the 'My Open Kitchen' course">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-olive-dark">My Open Kitchen</h3>
+                            <p class="mt-3 text-gray-600 leading-relaxed flex-grow">
+                                Combine the Three Pillars into a life-changing course. Cook with new confidence and creativity.
+                            </p>
+                            <a href="#" class="inline-block mt-6 text-rust-dark font-semibold hover:text-rust-darker transition-colors">
+                                Learn More &rarr;
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col transition-all hover:shadow-2xl hover:-translate-y-1">
+                        <img class="w-full h-56 object-cover" 
+                             src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="Friends toasting glasses over a dinner table">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-olive-dark">Share Open Kitchen</h3>
+                            <p class="mt-3 text-gray-600 leading-relaxed flex-grow">
+                                Gather with friends in your kitchen for a three-course meal while Jason demonstrates the Open Kitchen courses.
+                            </p>
+                            <a href="#" class="inline-block mt-6 text-rust-dark font-semibold hover:text-rust-darker transition-colors">
+                                Learn More &rarr;
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col transition-all hover:shadow-2xl hover:-translate-y-1">
+                        <img class="w-full h-56 object-cover" 
+                             src="https://images.pexels.com/photos/6697449/pexels-photo-6697449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="A person writing on an elegant gift card">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-olive-dark">Gift Certificates</h3>
+                            <p class="mt-3 text-gray-600 leading-relaxed flex-grow">
+                                Give the gift of Open Kitchen to a friend, colleague, or loved one!
+                            </p>
+                            <a href="mailto:french@openkitchencooking.com?subject=I'd%20like%20to%20share%20the%20gift%20of%20Open%20Kitchen!" class="inline-block mt-6 text-rust-dark font-semibold hover:text-rust-darker transition-colors">
+                                Inquire Here &rarr;
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-olive">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                    Ready to Transform Your Cooking?
+                </h2>
+                <p class="mt-4 text-xl text-olive-light max-w-2xl mx-auto">
+                    Schedule a free, no-obligation 30-minute conversation to see if Open Kitchen is right for you.
+                </p>
+                <a href="mailto:french@openkitchencooking.com?subject=I'd%20like%20to%20learn%20more" 
+                   class="inline-block mt-10 bg-rust text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:bg-rust-dark transition-all transform hover:scale-105">
+                   Schedule Your Free Call
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark-text text-cream">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold">Open Kitchen</h4>
+                    <a href="mailto:french@openkitchencooking.com?subject=Let's%20Cook!" class="text-olive-light hover:text-white transition-colors">
+                        french@openkitchencooking.com
+                    </a>
+                </div>
+                <div class="flex space-x-4 mt-6 md:mt-0">
+                    <a href="https://www.instagram.com/_openkitchen_" target="_blank" rel="noopener noreferrer" class="text-olive-light hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.917 3.917 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.703.01 5.556 0 5.829 0 8s.01 2.444.048 3.297c.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.556 15.99 5.829 16 8 16s2.444-.01 3.297-.048c.852-.04 1.433-.174 1.942-.372.526-.205.972-.478 1.417-.923.445-.444.719-.89.923-1.417.198-.51.333-1.09.372-1.942C15.99 10.444 16 10.171 16 8s-.01-2.444-.048-3.297c-.04-.852-.174-1.433-.372-1.942C15.38 2.27 15.107 1.824 14.662 1.378c-.444-.445-.89-.719-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.444.01 10.171 0 8 0zm0 1.44c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.599.92.11.282.24.705.275 1.486.039.843.047 1.096.047 3.232s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486-.145.373-.319.64-.599.92-.28.28-.546.453-.92.599-.282.11-.705.24-1.486.275-.843.039-1.096.047-3.232.047s-2.389-.008-3.232-.047c-.78-.035-1.204-.166-1.486-.275-.373-.145-.64-.319-.92-.599-.28-.28-.453-.546-.599.92-.11-.282-.24-.705-.275-1.J486-.039-.843-.047-1.096-.047-3.232s.008-2.389.047-3.232c.035-.78.166-1.204.275-1.486.145-.373.319-.64.599.92.28.28.546.453.92.599.282-.11.705.24 1.486.275.843-.039 1.096-.047 3.232-.047z"/>
+                          <path d="M8 4.075c-2.17 0-3.925 1.755-3.925 3.925S5.83 11.925 8 11.925 11.925 10.17 11.925 8 10.17 4.075 8 4.075zm0 6.408c-1.37 0-2.483-1.113-2.483-2.483S6.63 5.517 8 5.517s2.483 1.113 2.483 2.483S9.37 10.483 8 10.483zm4.27-6.502a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            if (menu) menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
